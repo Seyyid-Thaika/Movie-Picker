@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Picker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/516fd70be3.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-style:dashed;
+  border-color:black;
+}
+
+.dropbtn {
+  background-image: url('https://cutewallpaper.org/27/avengers-wallpaper-black-and-white-desktop/68625899.jpg');
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #b3d9ff;}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+footer {
+  padding: 1px;
+  text-align: center;
+  background-image: url('https://cutewallpaper.org/27/avengers-wallpaper-black-and-white-desktop/68625899.jpg');
+  color:black;
+}
+
+</style>
+<body style="background-image:url('https://c4.wallpaperflare.com/wallpaper/546/187/719/stunning-4k-stars-dark-space-milky-way-galaxy-wallpaper-preview.jpg');">
+<table id="TA" style="width:100%;background-image:url('https://cutewallpaper.org/27/avengers-wallpaper-black-and-white-desktop/68625899.jpg');">
+<tr>
+<th>
+<a href="#MO">
+<i class="fas fa-film" style="font-size:40px;color:black;"></i>
+</a>
+</th>
+<th style="color:black;font-family:'Marvel';font-size:50px">M o v i e  P i c k e r</th>
+<th style="font-size:15px;">
+<div class="dropdown">
+  <button class="dropbtn"><i class="fa-solid fa-gears" style="font-size:35px;color:black;"></i></button>
+  <div class="dropdown-content">
+    <a href="login folder/login.html" target="_blank">Login</a>
+    <a href="#AB">About</a>
+    <a href="mailto:seyyid2003@gmail.com" target="_blank">Contact</a>
+  </div>
+</div>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+</th>
+</tr>
+</table>
+<p id="AB" style="font-family:Marvel;font-size:20px;color:white;"> 
+The <strong>Movie Picker</strong> webpage was created by <b>Seyyid Thaika</b> in <i>2022</i> with the purpose of helping its users to pick a movie to enjoy during their weekend. Below listed are the posters of the movies released recently. Users can click on the <a href="#MO">posters</a> to view the trailer before finalizing their off-day watch. We hope you enjoyed your time spent on this page. Until next time!
+</p>
+
+<div id="MO" class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <a href="https://www.youtube.com/embed/Go8nTmfrQd8?autoplay=1&muted=1" target="_blank">
+  <img src="https://wallpaperaccess.com/full/2769762.jpg" style="width:100%">
+  </a>
+  <div class="text" style="color:black;">Thor: Love and Thunder</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <a href="https://www.youtube.com/embed/aWzlQ2N6qqg?autoplay=1&muted=1" target="_blank">
+  <img src="https://cdn.wallpapersafari.com/32/27/sczSRn.jpeg" style="width:100%">
+  </a>
+  <div class="text">Doctor Strange in the Multiverse of Madness</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <a href="https://www.youtube.com/embed/mqqft2x_Aa4?autoplay=1&muted=1" target="_blank">
+  <img src="https://coolhdwall.com/storage/202105/the-batman-movie-2022-hd-wallpaper-1920x1080-16.jpg" style="width:100%">
+  </a>
+  <div class="text">The Batman</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <a href="https://www.youtube.com/embed/oZ6iiRrz1SY?autoplay=1&muted=1" target="_blank">
+  <img src="https://frompage2screen.files.wordpress.com/2022/05/unnamed-3-1.jpg" style="width:100%">
+  </a>
+  <div class="text">Morbius</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <a href="https://www.youtube.com/embed/eHp3MbsCbMg?autoplay=1&muted=1" target="_blank">
+  <img src="https://i0.wp.com/thefutureoftheforce.com/wp-content/uploads/2022/01/New-Poster-For-Uncharted.jpg?fit=1920%2C1080&ssl=1" style="width:100%">
+  </a>
+  <div class="text" style="color:black;">Uncharted</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<footer>
+  <p><b>Author: Seyyid Thaika</b> | <a href="mailto:hege@example.com" target="_blank">Contact Us</a> | <a href="#TA"> Back to Top </a></p>
+</footer>
+
+</body>
+</html>
+
